@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Новости Казахстана</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <h1>Новостной портал</h1>
+      <button onclick="window.location.href='login.html'" class="login-btn">Вход</button>
+    </div>
+  </header>
+  <div class="layout container">
+    <aside>
+      <h3>Меню</h3>
+      <ul>
+        <li><a href="index.html">Лента</a></li>
+      </ul>
+    </aside>
+    <main>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Поиск новостей..." />
+        <button id="toggleTheme" class="theme-toggle">🌓 Тема</button>
+      </div>
+      <section id="news-list"></section>
+      <button id="load-more">Загрузить ещё</button>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
